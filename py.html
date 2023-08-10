@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+
+  <title>what is Python</title>
+</head>
+<style>
+  h1 {
+    margin-top: 35px;
+  }
+
+  p.float-end {
+    margin-right: 247px;
+  }
+
+  .row.featurette {
+    margin-top: 38px;
+  }
+
+  .d {
+    display: inline-block;
+  }
+
+  .float-end {
+    display: inline-block;
+    margin-bottom: 35px;
+  }
+
+  .lead li {
+    padding: 12px 0px;
+  }
+</style>
+
+<body>
+  <nav class="navbar navbar-expand-lg  sticky-top navbar-dark bg-dark">
+    <a class="navbar-brand" href="bootproject.html">iCoder</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="bootproject.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Topics
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="html.html">What is HTML</a>
+            <a class="dropdown-item" href="css.html">What is CSS</a>
+            <a class="dropdown-item" href="JS.html">What is JavaScript</a>
+            <a class="dropdown-item" href="py.html">Python</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" data-toggle="modal" data-target="#supportModal" href="supportModal">Support</a>
+            <a class="dropdown-item" data-toggle="modal" data-target="#WriteModal" href="WriteModal">Write for Us</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+        <button class="btn btn-outline-info my-2 my-sm-0" type="submit">
+          Search
+        </button>
+      </form>
+      <div class="mx-2">
+        <button class="btn btn-success" data-toggle="modal" data-target="#loginModal">Login</button>
+        <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal">SignUp</button>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+  <!-- Write Modal -->
+  <div class="modal fade" id="WriteModal" tabindex="-1" aria-labelledby="WriteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="WriteModalLabel">Write for Us</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Write for Us"
+              rows="9"></textarea>
+            <button type="submit" class="btn btn-primary my-3">Submit</button>
+          </div>
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- support Modal -->
+  <div class="modal fade" id="supportModal" tabindex="-1" aria-labelledby="supportModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="supportModalLabel">Support</h1>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          If you want to Support Us then pls SignUp to this WebSite and if you already had an Account then please login
+          to this website as fast as you can. This is a request from Us and if you want to support more then
+          follow our <a href="https://www.instagram.com/koustav_mayra/">Instagram Account</a> this will surely support Us.<b> Thanks!</b>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Login to iCoder</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- signup Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Get an iCoder Account</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <label for="cexampleInputPassword1">Confirm Password</label>
+              <input type="password" class="form-control" id="cexampleInputPassword1" placeholder="Confirm Password">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Create Account</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <h1 class="">Introduction to Python</h1>
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">What is Python?</h2>
+        <p class="my-4">
+          <b>Python</b> Python is an interpreted, object-oriented, high-level programming language with dynamic
+          semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it
+          very attractive for Rapid Application Development, as well as for use as a scripting or glue language to
+          connect existing components together. Python's simple, easy to learn syntax emphasizes readability and
+          therefore reduces the cost of program maintenance. Python supports modules and packages, which encourages
+          program modularity and code reuse. The Python interpreter and the extensive standard library are available
+          in source or binary form without charge for all major platforms, and can be freely distributed.
+          Often, programmers fall in love with Python because of the increased productivity it provides.
+        </p>
+      </div>
+      <div class="col-md-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="take4.jpg"
+          alt="Important Image" />
+      </div>
+    </div>
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Advantages of Python</h2>
+        <p class="lead my-4">
+
+          <li class="my-2">
+            <b>Easy to Read, Learn and Write − </b>Python is a high-level programming language that has English-like
+            syntax. This makes it easier to read and understand the code.
+            Python is really easy to pick up and learn, that is why a lot of people recommend Python to beginners.
+          </li>
+          <li class="my-2">
+            <b>Improved Productivity − </b>Python is a very productive language. Due to the simplicity of Python,
+            developers can focus on solving the problem. They don’t need to spend too much time in understanding the
+            syntax or behavior of the programming language.
+          </li>
+          <li class="my-2">
+            <b>Interpreted Language − </b>Python is an interpreted language which means that Python directly executes
+            the code line by line.
+          </li class="my-2">
+          <li>
+            <b> Dynamically Typed − </b>Python doesn’t know the type of variable until we run the code. It automatically
+            assigns the data type during execution. The programmer doesn’t need to worry about declaring variables and
+            their data types.
+          </li>
+          <li class="my-2"><b> Portability − </b>n many languages like C/C++, you need to change your code to run the
+            program on different platforms. That is not the same with Python. You only write once and run it
+            anywhere./li>
+        </p>
+      </div>
+      <div class="col-md-5 my-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="take5.jpg"
+          alt="Important Image" />
+      </div>
+    </div>
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">
+          Why learn Python?
+        </h2>
+        <p class="lead my-4">
+          <li><b>Career Opportunities and Salary : </b>Python language provides several job opportunities and promises high
+            growth with huge salary prospects. Some of the big and renowned companies that use Python for their
+            development are:
+
+          </li>
+          <li><b> Data Science : </b>Python is known for being robust, scalable and provides extensible visualization and
+            graphics options. Hence it’s widely used in Data Science. Python supports several popular libraries. Some of
+            them are as follows:
+
+          </li>
+          <li><b>Machine Learning : </b>Python is among the programming languages most preferred for Machine Learning
+            because of its simple syntax and its support of several machine learning libraries.
+
+          </li>
+          <li><b>Web Development : </b>Python provides a vast collection of frameworks that makes it much easier for
+            developers to develop web applications.</li>
+          <li><b>Scripting and Automation : </b>Python language can be used for writing scripts and automating workflows
+            without human intervention. This makes it very convenient.</li>
+          <li><b>Active Community : </b>Python has a massive community that can help you in programming errors or issues
+            with the software. You can post your queries in community forums, and community members will address it in
+            real quick time.
+
+          </li>
+        </p>
+      </div>
+      <div class="col-md-5 my-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="take6.jpg"
+          alt="Important Image" />
+      </div>
+    </div>
+  </div>
+
+  <div class="dropdown-divider my-4"></div>
+
+  <footer class="container">
+    <p class="float-end"><a href="bootproject.html"><-- Back to Home</a></p>
+    <p class="d">
+      © 2023–2025 iCoder, Inc. ·
+      <a href="https://www.instagram.com/koustav_mayra/">Instagram Account</a>
+    </p>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
