@@ -1,2 +1,2 @@
 # icoder-Bootstrap
- This is my bootstrao project
+ This is my Bootstrap website
